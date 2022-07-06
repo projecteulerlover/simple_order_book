@@ -121,6 +121,7 @@ Conditions/Assumptions:
     * Orders for different symbols should not cross (i.e. the book must support multiple symbols)
 
 Example session:
+```
     INPUT                                   | OUTPUT
     ============================================================================
     "O 10000 IBM B 10 100.00000"            | results.size() == 0
@@ -153,7 +154,7 @@ Example session:
                                             | results[1] == "F 10007 IBM 10 101.00000"
                                             | results[2] == "F 10010 IBM 3 102.00000"
                                             | results[3] == "F 10008 IBM 3 102.00000"
-
+```
 So, for the example actions.txt, the desired output from the application with the below main is:
 F 10003 IBM 5 100.00000
 F 10000 IBM 5 100.00000
