@@ -53,7 +53,7 @@ int main() {
       std::cout << *it << std::endl;
     }
   }
-  assert(Matcher("actions.txt",
+  assert(Matcher("./tests/actions.txt",
                  {"F 10003 IBM 5 100.000000", "F 10000 IBM 5 100.000000",
                   "F 10004 IBM 5 100.000000", "F 10000 IBM 5 100.000000",
                   "X 10002", "E 10008 Duplicate order id",
@@ -62,7 +62,7 @@ int main() {
                   "P 10005 IBM B 10 99.000000", "P 10001 IBM B 10 99.000000",
                   "F 10010 IBM 10 101.000000", "F 10007 IBM 10 101.000000",
                   "F 10010 IBM 3 102.000000", "F 10008 IBM 3 102.000000"}));
-  assert(Matcher("multiple_symbols.txt",
+  assert(Matcher("./tests/multiple_symbols.txt",
                  {"F 10003 APPL 5 100.000000", "F 10001 APPL 5 100.000000",
                   "P 10002 IBM B 10 100.000000", "P 10000 IBM B 10 100.000000",
                   "P 10001 APPL B 5 100.000000", "X 10002", "X 10001",
